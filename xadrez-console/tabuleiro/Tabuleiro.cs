@@ -57,10 +57,7 @@
             {
                 return false;
             }
-            else
-            {
                 return true;
-            }
         }
 
         public void validarPosicao(Posicao pos)
