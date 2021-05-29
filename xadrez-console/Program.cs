@@ -18,9 +18,7 @@ namespace xadrez_console
                     try
                     {
                         Console.Clear();
-                        Tela.imprimirTabuleuro(partida.tab);
-                        Console.WriteLine("\nTurno: " + partida.turno);
-                        Console.WriteLine("Agudando jogada: " + partida.jogadorAtual);
+                        Tela.imprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.Write("Origem: ");
