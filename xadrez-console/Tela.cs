@@ -12,11 +12,18 @@ namespace xadrez_console
             imprimirTabuleuro(partida.tab);
             Console.WriteLine();
             imprimirPecasCapituradas(partida);
-            Console.WriteLine("\nTurno: " + partida.turno);
-            Console.WriteLine("Agudando jogada: " + partida.jogadorAtual);
-            if (partida.xeque)
+            if (!partida.terminada) { 
+                Console.WriteLine("\nTurno: " + partida.turno);
+                Console.WriteLine("Agudando jogada: " + partida.jogadorAtual);
+                if (partida.xeque)
+                {
+                    Console.WriteLine("XEQUE!");
+                }
+            }
+            else
             {
-                Console.WriteLine("XEQUE!");
+                Console.WriteLine("XEQUEMATE!");
+                Console.WriteLine("Vencedor: " + partida.jogadorAtual);
             }
         }
 
